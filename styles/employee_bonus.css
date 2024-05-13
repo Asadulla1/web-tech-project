@@ -1,0 +1,28 @@
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+  text-align: center;
+  color: #333;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.info p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.bonus {
+  font-size: 24px;
+  color: #007bff;
+}
