@@ -10,7 +10,7 @@ if (!isset($_COOKIE['username']) || $_COOKIE['role'] != 'customer' ) {
 $customer = new CustomerController();
 
 $products = [];
-// $products = $customer->getAllAvailableProducts();
+$products = $customer->getAllAvailableProducts();
 $products = $customer->findCartProducts($_SESSION['user_id']);
 
 $_SESSION['products'] = $products;

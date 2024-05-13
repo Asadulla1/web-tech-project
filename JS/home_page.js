@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
         product.querySelector(".price").textContent.replace("Price: $", "")
       );
 
-      //   console.table({
-      //     minPrice: minPrice,
-      //     maxPrice: maxPrice,
-      //     productPrice: productPrice,
-      //   });
+      console.table({
+        minPrice: minPrice,
+        maxPrice: maxPrice,
+        productPrice: productPrice,
+      });
 
       product.style.display = "block";
 
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const productId = productContainer.querySelector(
           'input[name="product_id"]'
         ).value;
-        const username = '<?php echo $_SESSION["username"]; ?>';
+        const username = document.getElementById("username").value;
 
         const stockQuantityElement =
           productContainer.querySelector(".stock-quantity");
