@@ -34,10 +34,10 @@ $loyaltyInfo = $_SESSION['loyaltyInfo'];
 	<main>
         <div class="loyalty-info">
             <div class="username">User: <?= $_SESSION['username'] ?></div>
-            <?php foreach ($loyaltyInfo as $l): ?>
-                <div><strong>Loyalty points:</strong> <?= $l['loyalty_points']?></div>
-                <div><strong>Discount percentage:</strong> <?= $l['discount_percentage']?>%</div>
-                <div><strong>Expiration date:</strong> <?= $l['expiration_date']?></div>
+            <?php foreach ($loyaltyInfo as $loyal): ?>
+                <div><strong>Loyalty points:</strong> <?= $loyal['loyalty_points']?></div>
+                <div><strong>Discount percentage:</strong> <?= $loyal['discount_percentage']?>%</div>
+                <div><strong>Expiration date:</strong> <?= $loyal['expiration_date']?></div>
             <?php endforeach; ?>
         </div>
     </main>
