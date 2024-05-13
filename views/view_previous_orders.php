@@ -26,7 +26,6 @@ $orders = $_SESSION['orders'];
             <ul>
                 <li><a href="../controllers/home_page_controller.php">Home</a></li>
                 <li><a href="../controllers/update_user.php">Update Profile</a></li>
-                <li><a href="#">About</a></li>
                 <li><a href="../controllers/logout.php">Logout</a></li>
             </ul>
         </nav>
